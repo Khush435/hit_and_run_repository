@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaints List</title>
+</head>
+<body>
+    <h1>List of Complaints</h1>
+    <ul>
+        {% for complaint in complaints %}
+        <li>{{ complaint.name }} - {{ complaint.email }} - {{ complaint.description }} - {{ complaint.date_reported }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
